@@ -14,8 +14,9 @@ struct Persona
 
 int main(){
 	    int arroba = 0, punto = 0;
-	    	char busqueda,tipo;
-
+	    	char tipo;
+            char letra;
+            int busqueda;
     struct Persona persona;
 
     int opcion1, i, opcion, a = 0;
@@ -144,77 +145,49 @@ int main(){
     	
      printf("bienvenido\n ¿como desea encontrar su restaurante?\n introduzca:\n 1 para buscar por tipo de comida\n 2 por distancia\n 3 valoracion\n 4 salir del programa\n");
 	         
-			scanf("%c",&busqueda);
-			
-	
+			scanf("%d",&busqueda);
 
-	switch(busqueda){
-		case'1':
+	if (busqueda==1){
+		
 			printf("introduzca:\n 1 italiano\n 2 comida rapida\n 3 asiatico\n 5 kebab\n 4 salir del programa");
-			 printf("comprobacion");
-			break;
-			
-		case '2':
+			     
+             printf("Seleccione A para pedir comida italiana\n");
+             printf("Seleccione B para pedir comida oriental\n");
+             printf("Seleccione C para pedir comida mexicana\n");
+             printf("Seleccione D para pedir comida rapida\n");
+            scanf("%c",&letra);
+
+                  switch (letra) {
+                 	case'A':
+     		          printf("Usted ha selecionado comida italiana\n");
+     	              break;
+     	            case 'B':
+     	               printf("Usted ha selecionado comida oriental\n");
+     	               break;
+     	            case 'C':
+     		          printf("Usted ha seleccionado comida mexicana\n");
+     		          break;
+     	            case 'D':
+     		          printf("Usted ha selecionado comida rapida\n");
+     		          break;
+	                }
+            }
+		if (busqueda==2){
+		
 		printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa");
 		    scanf("%c",tipo);
-		    break;
-		case '3':
+		}
+		if (busqueda==3){
 			printf(" introduzca:\n 1. 5 estrellas\n 2. 4 estrellas\n 3. 3 estrellas\n 4. salir del programa");
 			 scanf("%c",tipo);
-		    break;
-		case '4':
+		}
+		if (busqueda==4){
 				printf("Vuelva pronto");
-				break;
-		default:
-			printf("error");
-			break;
-	}
+	         }
     
 }
-
-    char letra;
-printf("Seleccione el tipo de comida que le apetece hoy:\n");
-printf("Seleccione A para pedir comida italiana\n");
-printf("Seleccione B para pedir comida oriental\n");
-printf("Seleccione C para pedir comida mexicana\n");
-printf("Seleccione D para pedir comida rapida\n");
-scanf("%c",&letra);
-
-switch (letra) {
-     	case'a':
-     		printf("Usted ha selecionado comida italiana\n");
-     		break;
-     	case 'b':
-     	    printf("Usted ha selecionado comida oriental\n");
-     	    break;
-     	case 'c':
-     		printf("Usted ha seleccionado comida mexicana\n");
-     		break;
-     	case 'd':
-     		printf("Usted ha selecionado comida rapida\n");
-     		break;
-	 }
-
 
 return 0;
 }
 
-
-	  
-
-
-    
-
-
-
-
-
-
-
-
-    
- 
-
-	     
-	 
 
