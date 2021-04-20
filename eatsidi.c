@@ -16,7 +16,7 @@ int main(){
 	    int arroba = 0, punto = 0;
 	    	char tipo;
             char letra;
-            int busqueda;
+            int busqueda,bus2;
     struct Persona persona;
 
     int opcion1, i, opcion, a = 0;
@@ -147,31 +147,33 @@ int main(){
 	         
 			scanf("%d",&busqueda);
 
-	if (busqueda==1){
-		
-			printf("introduzca:\n 1 italiano\n 2 comida rapida\n 3 asiatico\n 5 kebab\n 4 salir del programa");
+      	if (busqueda==1){
 			     
-             printf("Seleccione A para pedir comida italiana\n");
-             printf("Seleccione B para pedir comida oriental\n");
-             printf("Seleccione C para pedir comida mexicana\n");
-             printf("Seleccione D para pedir comida rapida\n");
-            scanf("%c",&letra);
+             printf("Seleccione 1 para pedir comida italiana\n");
+             printf("Seleccione 2 para pedir comida oriental\n");
+             printf("Seleccione 3 para pedir comida mexicana\n");
+             printf("Seleccione 4 para pedir comida rapida\n");
+             printf("Seleccione 5 para salir del programa\n");
+             
+            scanf("%d",&bus2);
 
-                  switch (letra) {
-                 	case'A':
+                  if(bus2==1) {
+                 
      		          printf("Usted ha selecionado comida italiana\n");
-     	              break;
-     	            case 'B':
+     	          }
+     	            if(bus2==2) {
      	               printf("Usted ha selecionado comida oriental\n");
-     	               break;
-     	            case 'C':
+    	               }
+     	            if(bus2==3) {
      		          printf("Usted ha seleccionado comida mexicana\n");
-     		          break;
-     	            case 'D':
+     		          }
+     	           if(bus2==4) {
      		          printf("Usted ha selecionado comida rapida\n");
-     		          break;
-	                }
-            }
+     		     } if(bus2==5){
+     		     	printf("vuelva pronto");
+				  }
+	  }
+            
 		if (busqueda==2){
 		
 		printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa");
