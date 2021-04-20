@@ -14,23 +14,18 @@ struct Persona
 
 int main(){
 	    int arroba = 0, punto = 0;
-
+	    	char tipo;
+            char letra;
+            int busqueda,bus2;
     struct Persona persona;
-
- 
 
     int opcion1, i, opcion, a = 0;
 
-
-
-
-    
-		
         printf("Bienvenido a EATSIDI AND GO, donde comer es nuestro deber\n");
         printf("A PEDIR!\n");
         printf("Seleccione la opcion para ingresar:\n");
         printf("1.Registrarse\n");
-        printf("2.Iniciar Sesion\n");
+        printf("2.Iniciar Sesion\n3.Salir del programa\n");
 
         scanf("%d", &opcion1);
 
@@ -57,8 +52,8 @@ int main(){
 
             scanf("%d", &persona.tlf);
 
-            do
-            {
+//            do
+//            {
 
                 printf("introduzca su mail\n");
                 scanf("%s", persona.mail);
@@ -91,18 +86,15 @@ int main(){
                     printf("Correo invalido\n");
                 }
 
-            } while (arroba != 1 && punto != 1);
+//           } while ('arroba' != 1 && 'punto' != 1);
 
             printf("introduzca la contrasena\n");
 
             scanf("%s", persona.contra);
-        }
-
-        else
-
-        {
-            do
-            {
+ 
+	}if (opcion1==2) {
+//            do
+//           {
 
                 printf("introduzca su mail\n");
 
@@ -124,7 +116,8 @@ int main(){
                         punto = 1;
                     }
                 }
-
+          
+			
                 if (arroba == 1 && punto == 1)
                 {
 
@@ -136,35 +129,65 @@ int main(){
                     printf("Correo invalido\n");
                 }
 
-            } while (arroba != 1 && punto != 1);{
+//            } while ('arroba' !=1 && 'punto' !=1);{
 
             printf("introduzca su contrasena\n");
 
             scanf("%s", persona.contra);
-        }
+        
+    } if (opcion1==3){
+	
+    printf("Vuelva pronto\n");
     }
-    char letra;
-printf("Seleccione el tipo de comida que le apetece hoy:\n");
-printf("Seleccione A para pedir comida italiana\n");
-printf("Seleccione B para pedir comida oriental\n");
-printf("Seleccione C para pedir comida mexicana\n");
-printf("Seleccione D para pedir comida rapida\n");
-scanf("%c",&letra);
 
-switch (letra) {
-     	case'a':
-     		printf("Usted ha selecionado comida italiana\n");
-     		break;
-     	case 'b':
-     	    printf("Usted ha selecionado comida oriental\n");
-     	    break;
-     	case 'c':
-     		printf("Usted ha seleccionado comida mexicana\n");
-     		break;
-     	case 'd':
-     		printf("Usted ha selecionado comida rapida\n");
-     		break;
-	 }
+    
+    if (opcion1 ==1 || opcion1==2){
+    	
+     printf("bienvenido\n ¿como desea encontrar su restaurante?\n introduzca:\n 1 para buscar por tipo de comida\n 2 por distancia\n 3 valoracion\n 4 salir del programa\n");
+	         
+			scanf("%d",&busqueda);
+
+      	if (busqueda==1){
+			     
+             printf("Seleccione 1 para pedir comida italiana\n");
+             printf("Seleccione 2 para pedir comida oriental\n");
+             printf("Seleccione 3 para pedir comida mexicana\n");
+             printf("Seleccione 4 para pedir comida rapida\n");
+             printf("Seleccione 5 para salir del programa\n");
+             
+            scanf("%d",&bus2);
+
+                  if(bus2==1) {
+                 
+     		          printf("Usted ha selecionado comida italiana\n");
+     	          }
+     	            if(bus2==2) {
+     	               printf("Usted ha selecionado comida oriental\n");
+    	               }
+     	            if(bus2==3) {
+     		          printf("Usted ha seleccionado comida mexicana\n");
+     		          }
+     	           if(bus2==4) {
+     		          printf("Usted ha selecionado comida rapida\n");
+     		     } if(bus2==5){
+     		     	printf("vuelva pronto");
+				  }
+	  }
+            
+		if (busqueda==2){
+		
+		printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa");
+		    scanf("%c",tipo);
+		}
+		if (busqueda==3){
+			printf(" introduzca:\n 1. 5 estrellas\n 2. 4 estrellas\n 3. 3 estrellas\n 4. salir del programa");
+			 scanf("%c",tipo);
+		}
+		if (busqueda==4){
+				printf("Vuelva pronto");
+	         }
+    
+}
 
 return 0;
 }
