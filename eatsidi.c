@@ -138,6 +138,7 @@ int main(){
 	
     printf("Vuelva pronto\n");
     }
+
     
     if (opcion1 ==1 || opcion1==2){
     	
@@ -170,6 +171,31 @@ int main(){
 	}
     
 }
+
+    char letra;
+printf("Seleccione el tipo de comida que le apetece hoy:\n");
+printf("Seleccione A para pedir comida italiana\n");
+printf("Seleccione B para pedir comida oriental\n");
+printf("Seleccione C para pedir comida mexicana\n");
+printf("Seleccione D para pedir comida rapida\n");
+scanf("%c",&letra);
+
+switch (letra) {
+     	case'a':
+     		printf("Usted ha selecionado comida italiana\n");
+     		break;
+     	case 'b':
+     	    printf("Usted ha selecionado comida oriental\n");
+     	    break;
+     	case 'c':
+     		printf("Usted ha seleccionado comida mexicana\n");
+     		break;
+     	case 'd':
+     		printf("Usted ha selecionado comida rapida\n");
+     		break;
+	 }
+
+
 return 0;
 }
 
