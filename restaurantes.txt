@@ -1,0 +1,15 @@
+1 Burger King
+2 Tagliatella
+3 Ginos
+4 Muerde la Pasta
+5 Pomodoro
+6 Go shushing
+7 Palacio de Oriente
+8 Restaurante Chino Jade
+9 La Chelinda
+10 Tierra Burrito
+11 El Rey de los Tacos
+12 Taco Bell
+13 McDonalds
+14 Galaxy kebab
+15 KFC
