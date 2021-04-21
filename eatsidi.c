@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 #include <string.h>
 
 struct Persona
@@ -17,6 +17,9 @@ int main(){
 	    	char tipo;
             char letra;
             int busqueda,bus2;
+             int nitaliano;
+			 char ritaliano[200];
+            int fentrada;
     struct Persona persona;
 
     int opcion1, i, opcion, a = 0;
@@ -160,6 +163,17 @@ int main(){
                   if(bus2==1) {
                  
      		          printf("Usted ha selecionado comida italiana\n");
+     		          
+     		          FILE * fentrada1;
+						fentrada1 = fopen("italianos.txt", "r");
+						if(fentrada1 == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<3; i++){
+							fscanf(fentrada1, "%d %s", &nitaliano, ritaliano);
+							printf("%d - %s\n", nitaliano, ritaliano);
      	          }
      	            if(bus2==2) {
      	               printf("Usted ha selecionado comida oriental\n");
@@ -191,4 +205,5 @@ int main(){
 }
 
 return 0;
+}
 }
