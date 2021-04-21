@@ -143,7 +143,7 @@ int main(){
     
     if (opcion1 ==1 || opcion1==2){
     	
-     printf("bienvenido\n Â¿como desea encontrar su restaurante?\n introduzca:\n 1 para buscar por tipo de comida\n 2 por distancia\n 3 valoracion\n 4 salir del programa\n");
+     printf("bienvenido\n ¿Como desea encontrar su restaurante?\n Introduzca:\n 1. Para buscar por tipo de comida\n 2. Por distancia\n 3. Valoracion\n 4. Salir del programa\n");
 	         
 			scanf("%d",&busqueda);
 
@@ -177,11 +177,12 @@ int main(){
 		if (busqueda==2){
 		
 		printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa");
-		    scanf("%c",tipo);
+		    scanf("%d",tipo);
 		}
 		if (busqueda==3){
-			printf(" introduzca:\n 1. 5 estrellas\n 2. 4 estrellas\n 3. 3 estrellas\n 4. salir del programa");
-			 scanf("%c",tipo);
+			printf(" introduzca numero de estrellas:\n 5 estrellas\n 4 estrellas\n 3 estrellas\n 0. salir del programa\n");
+			 scanf("%d",tipo);
+			 
 		}
 		if (busqueda==4){
 				printf("Vuelva pronto");
