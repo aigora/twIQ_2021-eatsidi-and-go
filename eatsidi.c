@@ -190,7 +190,7 @@ int main(){
             
 		if (busqueda==2){
 		
-		printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa");
+		printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 buscar por precio\n 5 salir del programa");
 		    scanf("%d",tipo);
 		}
 		if (busqueda==3){
@@ -199,8 +199,13 @@ int main(){
 			 
 		}
 		if (busqueda==4){
-				printf("Vuelva pronto");
-	         }
+			printf("Introduzca el tipo de precio:\n Precio bajo\n Gama media\n Precio alto\n");
+	         scanf("%d",tipo);
+			 }
+		if (busqueda==5) {
+			printf("Vuelva pronto");
+		}
+	         
     
 }
 

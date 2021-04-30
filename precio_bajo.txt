@@ -1,0 +1,6 @@
+1 Burguer King 
+2 Muerde la pasta
+3 Taco Bell
+4 McDonalds
+5 Galaxy kebab
+6 KFC
