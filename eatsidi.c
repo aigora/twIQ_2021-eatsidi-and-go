@@ -146,7 +146,7 @@ int main(){
     
     if (opcion1 ==1 || opcion1==2){
     	
-     printf("bienvenido\n ¿Como desea encontrar su restaurante?\n Introduzca:\n 1. Para buscar por tipo de comida\n 2. Por distancia\n 3. Valoracion\n 4. Salir del programa\n");
+     printf("bienvenido\n ¿Como desea encontrar su restaurante?\n Introduzca:\n 1. Para buscar por tipo de comida\n 2. Por distancia\n 3. Valoracion\n 4. Precio\n 5. Salir del programa\n");
 	         
 			scanf("%d",&busqueda);
 
@@ -187,6 +187,7 @@ int main(){
      		     	printf("vuelva pronto");
 				  }
 	  }
+}
             
 		if (busqueda==2){
 		
@@ -199,15 +200,15 @@ int main(){
 			 
 		}
 		if (busqueda==4){
-			printf("Introduzca el tipo de precio:\n Precio bajo\n Gama media\n Precio alto\n");
+			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
 	         scanf("%d",tipo);
 			 }
-		if (busqueda==5) {
+		if (busqueda==5){
 			printf("Vuelva pronto");
 		}
 	         
     
-}
+
 
 return 0;
 }
