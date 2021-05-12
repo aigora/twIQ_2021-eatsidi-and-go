@@ -212,8 +212,8 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &noriental, roriental);
 							printf("%d - %s\n", noriental, roriental);
-    	           }
-    	       }
+    	               }
+    	            }
      	            if(bus2==3) {
      		          printf("Usted ha seleccionado comida mexicana\n");
      		          FILE * fentrada;
@@ -226,8 +226,8 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &nmexicano, rmexicano);
 							printf("%d - %s\n", nmexicano, rmexicano);
-     		          }
-     		      }
+     		            }
+     		         }
      	           if(bus2==4) {
      		          printf("Usted ha selecionado comida rapida\n");
      		          FILE * fentrada;
@@ -240,17 +240,18 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &nrapida, rrapida);
 							printf("%d - %s\n", nrapida, rrapida);
-     		          }
-     		     } if(bus2==5){
+     		            }
+     		        } 
+				  if(bus2==5){
      		     	printf("vuelva pronto");
-				  }
+				     }
 	  }
 	  
 }
             
 	    if (busqueda==2){
 		
-	         printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa\n");
+	         printf("Introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa\n");
 		     scanf("%d",tipo);
 		             if (bus2==1) {
 	                    printf ("Usted ha seleccionado a 10 km\n");
@@ -302,9 +303,56 @@ int main(){
                      }
 	}
 		if (busqueda==3){
-			printf(" introduzca numero de estrellas:\n 5 estrellas\n 4 estrellas\n 3 estrellas\n 0. salir del programa\n");
+			printf("Introduzca numero de estrellas:\n 1 para 5 estrellas\n 2 para 4 estrellas\n 3 para 3 estrellas\n 0. 4 para salir del programa\n");
 			 scanf("%d",tipo);
-			 
+			 	    if(bus2==1) {
+                 
+     		          printf("Usted ha selecionado 5 estrellas\n");
+     		          
+     		          FILE * fentrada;
+						fentrada = fopen("5estrellas.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<4; i++){
+							fscanf(fentrada, "%d %s", &5estrellas, r5estrellas);
+							printf("%d - %s\n", n5estrellas, r5estrellas);
+						}
+                   }
+     	             if(bus2==2) {
+     	               printf("Usted ha selecionado 4 estrellas\n");
+     	              FILE * fentrada;
+						fentrada = fopen("oriental.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<7; i++){
+							fscanf(fentrada, "%d %s", &4estrellas, r4estrellas);
+							printf("%d - %s\n", n4estrellas, r4estrellas);
+    	               }
+    	           }
+                     if(bus2==3) {
+     		          printf("Usted ha seleccionado 3 estrellas\n");
+     		          FILE * fentrada;
+						fentrada = fopen("3estrellas.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<4; i++){
+							fscanf(fentrada, "%d %s", &n3estrellas, r3estrellas);
+							printf("%d - %s\n", n3estrellas, r3estrellas);
+     		           }
+     		       } 
+				     if(bus2==4){
+     		     	printf("vuelva pronto");
+				     }
+	  }
 		}
 		if (busqueda==4){
 			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
