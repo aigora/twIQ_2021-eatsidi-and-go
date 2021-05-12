@@ -248,11 +248,59 @@ int main(){
 	  
 }
             
-		if (busqueda==2){
+	    if (busqueda==2){
 		
-		printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 buscar por precio\n 5 salir del programa");
-		    scanf("%d",tipo);
-		}
+	         printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa\n");
+		     scanf("%d",tipo);
+		             if (bus2==1) {
+	                    printf ("Usted ha seleccionado a 10 km\n");
+	
+	                    FILE * fentrada;
+	                    fentrada = fopen("10km.txt", "r");
+	                    if(fentrada == NULL){
+	                     	printf("Error en la apertura del fichero\n");
+	                     	return 0;
+	                         }
+	                        printf("¿Que restaurante prefiere? \n");
+		                    for(i=0; i<6; i++) {
+		                     fscanf(fentrada, "%d %s", &n10km, r10km);
+		                     printf("%d - %s\n", n10km, r10km);
+	                       }	
+                     }			
+                     if (bus2==2) {
+                    	printf ("Usted ha seleccionado a 25 km\n");
+	
+	                    FILE * fentrada;
+	                    fentrada = fopen("25km.txt", "r");
+	                    if(fentrada == NULL){
+	                        printf("Error en la apertura del fichero\n");
+		                    return 0;
+	                    }
+                        	printf("¿Que restaurante prefiere? \n");
+		                    for(i=0; i<5; i++){
+	                       	 fscanf(fentrada, "%d %s", &n25km, r25km);
+		                     printf("%d - %s\n", n25km, r25km);
+	                        }
+                     }
+                     if (bus2==3) {
+	                   printf ("Usted ha seleccionado a 35 km\n");
+	
+	                   FILE * fentrada;
+	                   fentrada = fopen("35km.txt", "r");
+                       if(fentrada == NULL){
+		                    printf("Error en la apertura del fichero\n");
+		                    return 0;
+                     	}
+	                          printf("¿Que restaurante prefiere? \n");
+		                      for(i=0; i<4; i++){
+		                      fscanf(fentrada, "%d %s", &n35km, r35km);
+		                      printf("%d - %s\n", n35km, r35km);
+                           }	
+                     }
+                     if(bus2==4) {
+                       printf("Vuelva pronto");
+                     }
+	}
 		if (busqueda==3){
 			printf(" introduzca numero de estrellas:\n 5 estrellas\n 4 estrellas\n 3 estrellas\n 0. salir del programa\n");
 			 scanf("%d",tipo);
