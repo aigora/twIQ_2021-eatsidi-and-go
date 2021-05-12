@@ -1,5 +1,5 @@
-1 Muerde la pasta
+1 Muerde_la_pasta
 2 Pomodoro
 3 Ginos
-4 El Rey de los Tacos 
-5 Restaurante Chino Jade 
+4 El_Rey_de_los_Tacos 
+5 Restaurante_Chino_Jade 

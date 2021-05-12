@@ -1,4 +1,4 @@
-1 Burger King
+1 Burger_King
 2 McDonalds
-3 Galaxy kebab
+3 Galaxy_kebab
 4 KFC

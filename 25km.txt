@@ -1,5 +1,5 @@
 1 KFC
-2 La Chelinda
+2 La_Chelinda
 3 Pomodoro
-4 Palacio de Oriente
+4 Palacio_de_Oriente
 5 Tagliatella

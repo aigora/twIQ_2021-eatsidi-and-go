@@ -1,4 +1,4 @@
-1 Palacio de Oriente
-2 Tierra Burrito
-3 El Rey de los Tacos
-4 Galaxy Kebab
+1 Palacio_de_Oriente
+2 Tierra_Burrito
+3 El_Rey_de_los_Tacos
+4 Galaxy_Kebab

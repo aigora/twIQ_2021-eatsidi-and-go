@@ -1,6 +1,6 @@
-1 Burger King
+1 Burger_King
 2 McDonalds
 3 Ginos
-4 Taco Bell
-5 Go sushing
-6 Galaxy kebab
+4 Taco_Bell
+5 Go_sushing
+6 Galaxy_kebab
