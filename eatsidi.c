@@ -228,6 +228,7 @@ int main(){
      		     	printf("vuelva pronto");
 				  }
 	  }
+	  
 }
             
 		if (busqueda==2){
