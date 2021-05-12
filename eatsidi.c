@@ -11,8 +11,17 @@ struct Persona
     char mail[50];
     char contra[20];
 };
-
+void banner(){
+	printf("\n");
+	printf("   |======     /|   ===========   ==========   |     |  ---        |     \n");
+	printf("   |          / |        |        |            |     |      ---    |    \n");
+	printf("   |___      /__|        |        |_________   |     |       ---   |   \n");
+	printf("   |        /   |        |                 |   |     |      ---    |     \n");
+	printf("   |       /    |        |                 |   |     |    ---      |   \n");
+	printf("   |______/     |        |       __________|   |     | ---         |     \n");
+}
 int main(){
+	banner();
 	    int arroba = 0, punto = 0;
 	    	char tipo;
             char letra;
@@ -25,6 +34,7 @@ int main(){
 			 char rmexicano[200];
 			 int nrapida;
 			 char rrapida[200];
+			 int eleccion;
 			 
             int fentrada;
     struct Persona persona;
@@ -181,7 +191,14 @@ int main(){
 						for(i=0; i<4; i++){
 							fscanf(fentrada, "%d %s", &nitaliano, ritaliano);
 							printf("%d - %s\n", nitaliano, ritaliano);
-						}
+						}	scanf("%d",&eleccion);
+						if(eleccion!=0){
+						
+							 printf ("1.Pizza 4 fomaggi\n2.Pizza diabola\n3.Fetuccini a la carbonara\n4.Lasaña piccola\n  ");
+						}	
+						 scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
      	          }
      	            if(bus2==2) {
      	               printf("Usted ha selecionado comida oriental\n");
