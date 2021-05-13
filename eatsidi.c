@@ -47,8 +47,15 @@ int main(){
 			 char r4estrellas[200];
 			 int n5estrellas;
 			 char r5estrellas[200];
+			 int nprecio_bajo;
+			 char rprecio_bajo[200];
+			 int ngama_media;
+			 char rgama_media[200];
+			 int nprecio_alto;
+			 char rprecio_alto[200],
 			 
-            int fentrada;
+			 
+    int fentrada;
     struct Persona persona;
 
     int opcion1, i, opcion, a = 0;
@@ -365,12 +372,58 @@ int main(){
      		     	printf("vuelva pronto");
 				     }
 	  }
-		}
+		
+		
 		if (busqueda==4){
 			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
 	         scanf("%d",tipo);
-			 }
-		if (busqueda==5){
+	               if(bus2==1) {
+                 
+     		          printf("Usted ha selecionado precio bajo\n");
+     		          
+     		          FILE * fentrada;
+						fentrada = fopen("precio_bajo.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<6; i++){
+							fscanf(fentrada, "%d %s", &nprecio_bajo, rprecio_bajo);
+							printf("%d - %s\n", nprecio_bajo, rprecio_bajo);
+						}
+                     }
+     	           if(bus2==2) {
+     	               printf("Usted ha selecionado gama media\n");
+     	              FILE * fentrada;
+						fentrada = fopen("gama_media.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<5; i++){
+							fscanf(fentrada, "%d %s", &ngama_media, rgama_media);
+							printf("%d - %s\n", ngama_media, rgama_media);
+    	               }
+    	            }
+
+     	           if(bus2==3) {
+     		          printf("Usted ha seleccionado precio alto\n");
+     		          FILE * fentrada;
+						fentrada = fopen("precio_alto.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<5; i++){
+							fscanf(fentrada, "%d %s", &nprecio_alto, rprecio_alto);
+							printf("%d - %s\n", nprecio_alto, rprecio_alto);
+     		            }
+     		        } 
+		}
+	   if (busqueda==5){
 			printf("Vuelva pronto");
 		}
 	         
