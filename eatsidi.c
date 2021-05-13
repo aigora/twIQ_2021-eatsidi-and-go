@@ -35,6 +35,18 @@ int main(){
 			 int nrapida;
 			 char rrapida[200];
 			 int eleccion;
+			 int n10km;
+			 char r10km[200];
+			 int n25km;
+			 char r25km[200];
+			 int n35km;
+			 char r35km[200];
+			 int n3estrellas;
+			 char r3estrellas[200];
+			 int n4estrellas;
+			 char r4estrellas[200];
+			 int n5estrellas;
+			 char r5estrellas[200];
 			 
             int fentrada;
     struct Persona persona;
@@ -317,7 +329,7 @@ int main(){
 						}
 						printf("¿Que restaurante prefiere? \n");
 						for(i=0; i<4; i++){
-							fscanf(fentrada, "%d %s", &5estrellas, r5estrellas);
+							fscanf(fentrada, "%d %s", &n5estrellas, r5estrellas);
 							printf("%d - %s\n", n5estrellas, r5estrellas);
 						}
                    }
@@ -331,7 +343,7 @@ int main(){
 						}
 						printf("¿Que restaurante prefiere? \n");
 						for(i=0; i<7; i++){
-							fscanf(fentrada, "%d %s", &4estrellas, r4estrellas);
+							fscanf(fentrada, "%d %s", &n4estrellas, r4estrellas);
 							printf("%d - %s\n", n4estrellas, r4estrellas);
     	               }
     	           }
