@@ -52,11 +52,11 @@ int main(){
 			 int ngama_media;
 			 char rgama_media[200];
 			 int nprecio_alto;
-			 char rprecio_alto[200],
+			 char rprecio_alto[200];
 			 
 			 
-    int fentrada;
-    struct Persona persona;
+     int fentrada;
+     struct Persona persona;
 
     int opcion1, i, opcion, a = 0;
 
