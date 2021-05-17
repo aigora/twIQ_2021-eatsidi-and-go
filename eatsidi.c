@@ -35,9 +35,28 @@ int main(){
 			 int nrapida;
 			 char rrapida[200];
 			 int eleccion;
+			 int n10km;
+			 char r10km[200];
+			 int n25km;
+			 char r25km[200];
+			 int n35km;
+			 char r35km[200];
+			 int n3estrellas;
+			 char r3estrellas[200];
+			 int n4estrellas;
+			 char r4estrellas[200];
+			 int n5estrellas;
+			 char r5estrellas[200];
+			 int nprecio_bajo;
+			 char rprecio_bajo[200];
+			 int ngama_media;
+			 char rgama_media[200];
+			 int nprecio_alto;
+			 char rprecio_alto[200];
 			 
-            int fentrada;
-    struct Persona persona;
+			 
+     int fentrada;
+     struct Persona persona;
 
     int opcion1, i, opcion, a = 0;
 
@@ -212,8 +231,8 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &noriental, roriental);
 							printf("%d - %s\n", noriental, roriental);
-    	           }
-    	       }
+    	               }
+    	            }
      	            if(bus2==3) {
      		          printf("Usted ha seleccionado comida mexicana\n");
      		          FILE * fentrada;
@@ -226,8 +245,8 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &nmexicano, rmexicano);
 							printf("%d - %s\n", nmexicano, rmexicano);
-     		          }
-     		      }
+     		            }
+     		         }
      	           if(bus2==4) {
      		          printf("Usted ha selecionado comida rapida\n");
      		          FILE * fentrada;
@@ -240,29 +259,171 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &nrapida, rrapida);
 							printf("%d - %s\n", nrapida, rrapida);
-     		          }
-     		     } if(bus2==5){
+     		            }
+     		        } 
+				  if(bus2==5){
      		     	printf("vuelva pronto");
-				  }
+				     }
 	  }
 	  
 }
             
-		if (busqueda==2){
+	    if (busqueda==2){
 		
-		printf(" introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 buscar por precio\n 5 salir del programa");
-		    scanf("%d",tipo);
-		}
+	         printf("Introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa\n");
+		     scanf("%d",tipo);
+		             if (bus2==1) {
+	                    printf ("Usted ha seleccionado a 10 km\n");
+	
+	                    FILE * fentrada;
+	                    fentrada = fopen("10km.txt", "r");
+	                    if(fentrada == NULL){
+	                     	printf("Error en la apertura del fichero\n");
+	                     	return 0;
+	                         }
+	                        printf("¿Que restaurante prefiere? \n");
+		                    for(i=0; i<6; i++) {
+		                     fscanf(fentrada, "%d %s", &n10km, r10km);
+		                     printf("%d - %s\n", n10km, r10km);
+	                       }	
+                     }			
+                     if (bus2==2) {
+                    	printf ("Usted ha seleccionado a 25 km\n");
+	
+	                    FILE * fentrada;
+	                    fentrada = fopen("25km.txt", "r");
+	                    if(fentrada == NULL){
+	                        printf("Error en la apertura del fichero\n");
+		                    return 0;
+	                    }
+                        	printf("¿Que restaurante prefiere? \n");
+		                    for(i=0; i<5; i++){
+	                       	 fscanf(fentrada, "%d %s", &n25km, r25km);
+		                     printf("%d - %s\n", n25km, r25km);
+	                        }
+                     }
+                     if (bus2==3) {
+	                   printf ("Usted ha seleccionado a 35 km\n");
+	
+	                   FILE * fentrada;
+	                   fentrada = fopen("35km.txt", "r");
+                       if(fentrada == NULL){
+		                    printf("Error en la apertura del fichero\n");
+		                    return 0;
+                     	}
+	                          printf("¿Que restaurante prefiere? \n");
+		                      for(i=0; i<4; i++){
+		                      fscanf(fentrada, "%d %s", &n35km, r35km);
+		                      printf("%d - %s\n", n35km, r35km);
+                           }	
+                     }
+                     if(bus2==4) {
+                       printf("Vuelva pronto");
+                     }
+	}
 		if (busqueda==3){
-			printf(" introduzca numero de estrellas:\n 5 estrellas\n 4 estrellas\n 3 estrellas\n 0. salir del programa\n");
+			printf("Introduzca numero de estrellas:\n 1 para 5 estrellas\n 2 para 4 estrellas\n 3 para 3 estrellas\n 0. 4 para salir del programa\n");
 			 scanf("%d",tipo);
-			 
-		}
+			 	    if(bus2==1) {
+                 
+     		          printf("Usted ha selecionado 5 estrellas\n");
+     		          
+     		          FILE * fentrada;
+						fentrada = fopen("5estrellas.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<4; i++){
+							fscanf(fentrada, "%d %s", &n5estrellas, r5estrellas);
+							printf("%d - %s\n", n5estrellas, r5estrellas);
+						}
+                   }
+     	             if(bus2==2) {
+     	               printf("Usted ha selecionado 4 estrellas\n");
+     	              FILE * fentrada;
+						fentrada = fopen("oriental.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<7; i++){
+							fscanf(fentrada, "%d %s", &n4estrellas, r4estrellas);
+							printf("%d - %s\n", n4estrellas, r4estrellas);
+    	               }
+    	           }
+                     if(bus2==3) {
+     		          printf("Usted ha seleccionado 3 estrellas\n");
+     		          FILE * fentrada;
+						fentrada = fopen("3estrellas.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<4; i++){
+							fscanf(fentrada, "%d %s", &n3estrellas, r3estrellas);
+							printf("%d - %s\n", n3estrellas, r3estrellas);
+     		           }
+     		       } 
+				     if(bus2==4){
+     		     	printf("vuelva pronto");
+				     }
+	  }
+		
+		
 		if (busqueda==4){
 			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
 	         scanf("%d",tipo);
-			 }
-		if (busqueda==5){
+	               if(bus2==1) {
+                 
+     		          printf("Usted ha selecionado precio bajo\n");
+     		          
+     		          FILE * fentrada;
+						fentrada = fopen("precio_bajo.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<6; i++){
+							fscanf(fentrada, "%d %s", &nprecio_bajo, rprecio_bajo);
+							printf("%d - %s\n", nprecio_bajo, rprecio_bajo);
+						}
+                     }
+     	           if(bus2==2) {
+     	               printf("Usted ha selecionado gama media\n");
+     	              FILE * fentrada;
+						fentrada = fopen("gama_media.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<5; i++){
+							fscanf(fentrada, "%d %s", &ngama_media, rgama_media);
+							printf("%d - %s\n", ngama_media, rgama_media);
+    	               }
+    	            }
+
+     	           if(bus2==3) {
+     		          printf("Usted ha seleccionado precio alto\n");
+     		          FILE * fentrada;
+						fentrada = fopen("precio_alto.txt", "r");
+						if(fentrada == NULL){
+							printf("Error en la apertura del fichero\n");
+							return 0;
+						}
+						printf("¿Que restaurante prefiere? \n");
+						for(i=0; i<5; i++){
+							fscanf(fentrada, "%d %s", &nprecio_alto, rprecio_alto);
+							printf("%d - %s\n", nprecio_alto, rprecio_alto);
+     		            }
+     		        } 
+		}
+	   if (busqueda==5){
 			printf("Vuelva pronto");
 		}
 	         
