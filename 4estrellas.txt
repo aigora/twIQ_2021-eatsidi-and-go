@@ -1,7 +1,7 @@
-1 Taco Bell
+1 Taco_Bell
 2 Tagliatella
 3 Ginos
 4 Pomodoro
-5 Go Sushing
-6 La Chelinda
-7 Restaurante Chino Jade
+5 Go_Sushing
+6 La_Chelinda
+7 Restaurante_Chino_Jade
