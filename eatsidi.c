@@ -236,15 +236,14 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &noriental, roriental);
 							printf("%d - %s\n", noriental, roriental);
-    	               }
-					   if(eleccion!=0){
-						
-							 printf ("1\n  ");
+    	               }scanf("%d",&eleccion);
+						if(eleccion!=0){		 	
+							 printf ("1.Tallarines Teriyaki\n2. Pato Cantones\n3.Arroz Tres Delicias\n4.Sopa Agripicante\n5.Sushi\n ");
 						}	
 						 scanf("%d",&eleccion);
 						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
 						 banner();
-    	            }
+					}
      	            if(bus2==3) {
      		          printf("Usted ha seleccionado comida mexicana\n");
      		          FILE * fentrada;
@@ -257,7 +256,16 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &nmexicano, rmexicano);
 							printf("%d - %s\n", nmexicano, rmexicano);
-     		            }
+     		            }scanf("%d",&eleccion);
+					if(eleccion!=0){
+						
+							 printf ("1.Nachos con Guacamole\n2.Burritos\n3.Quesadilla\n4.Tacos variados\n");
+						}	
+						 scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
+					
+    	            
      		         }
      	           if(bus2==4) {
      		          printf("Usted ha selecionado comida rapida\n");
@@ -304,7 +312,21 @@ int main(){
 		                    for(i=0; i<6; i++) {
 		                     fscanf(fentrada, "%d %s", &n10km, r10km);
 		                     printf("%d - %s\n", n10km, r10km);
-	                       }	
+	                       }	scanf("%d",&eleccion);
+						if(eleccion==1  && eleccion==2 || eleccion==6){
+						
+							 printf ("1.Menu Cheeseburger\n2.Menu Alitas de pollo\n3.Menu Signature\n4.Menu Nuggets\n5.Menu Galaxy\n  ");
+						}	else if (eleccion==3){
+							printf ("1.Pizza 4 fomaggi\n2.Pizza diabola\n3.Fetuccini a la carbonara\n4.Lasaña piccola\n  ");
+						}else if (eleccion == 4){
+							 printf ("1.Nachos con Guacamole\n2.Burritos\n3.Quesadilla\n4.Tacos variados\n");
+						}else if(eleccion == 5){
+							 printf ("1.Tallarines Teriyaki\n2. Pato Cantones\n3.Arroz Tres Delicias\n4.Sopa Agripicante\n5.Sushi\n ");
+						}
+						 scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
+     		        }
                      }			
                      if (bus2==2) {
                     	printf ("Usted ha seleccionado a 25 km\n");
@@ -339,7 +361,7 @@ int main(){
                      if(bus2==4) {
                        printf("Vuelva pronto");
                      }
-	}
+	
 		if (busqueda==3){
 			printf("Introduzca numero de estrellas:\n 1 para 5 estrellas\n 2 para 4 estrellas\n 3 para 3 estrellas\n 0. 4 para salir del programa\n");
 			 scanf("%d",&bus2);
@@ -395,11 +417,11 @@ int main(){
 		
 		if (busqueda==4){
 			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
-<<<<<<< HEAD
+
 	         scanf("%d",bus2);
-=======
-	         scanf("%d",&bus2);
->>>>>>> 02c2ff9b62b89974dbded9f2e380fc05fe787b8b
+
+
+
 	               if(bus2==1) {
                  
      		          printf("Usted ha selecionado precio bajo\n");
