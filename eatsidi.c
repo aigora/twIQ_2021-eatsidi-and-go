@@ -237,6 +237,13 @@ int main(){
 							fscanf(fentrada, "%d %s", &noriental, roriental);
 							printf("%d - %s\n", noriental, roriental);
     	               }
+					   if(eleccion!=0){
+						
+							 printf ("1\n  ");
+						}	
+						 scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
     	            }
      	            if(bus2==3) {
      		          printf("Usted ha seleccionado comida mexicana\n");
@@ -381,7 +388,7 @@ int main(){
 		
 		if (busqueda==4){
 			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
-	         scanf("%d",tipo);
+	         scanf("%d",bus2);
 	               if(bus2==1) {
                  
      		          printf("Usted ha selecionado precio bajo\n");
