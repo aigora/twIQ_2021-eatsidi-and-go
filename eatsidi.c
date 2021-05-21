@@ -28,7 +28,7 @@ printf(".\n.\n");
 int main(){
 	banner();
 	    int arroba = 0, punto = 0;
-	    	char tipo;
+	    	int tipo;
             char letra;
             int busqueda,bus2;
              int nitaliano;
@@ -264,7 +264,14 @@ int main(){
 						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &nrapida, rrapida);
 							printf("%d - %s\n", nrapida, rrapida);
-     		            }
+     		            } scanf("%d",&eleccion);
+						if(eleccion!=0){
+						
+							 printf ("1.Menu Cheeseburger\n2.Menu Alitas de pollo\n3.Menu Signature\n4.Menu Nuggets\n5.Menu Galaxy\n  ");
+						}	
+						 scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
      		        } 
 				  if(bus2==5){
      		     	printf("vuelva pronto");
@@ -276,7 +283,7 @@ int main(){
 	    if (busqueda==2){
 		
 	         printf("Introduzca:\n 1 para buscar a 10 km\n 2 para buscar a 25 km\n 3 para buscar a 35 km\n 4 salir del programa\n");
-		     scanf("%d",tipo);
+		     scanf("%d", &bus2);
 		             if (bus2==1) {
 	                    printf ("Usted ha seleccionado a 10 km\n");
 	
@@ -328,7 +335,7 @@ int main(){
 	}
 		if (busqueda==3){
 			printf("Introduzca numero de estrellas:\n 1 para 5 estrellas\n 2 para 4 estrellas\n 3 para 3 estrellas\n 0. 4 para salir del programa\n");
-			 scanf("%d",tipo);
+			 scanf("%d",&bus2);
 			 	    if(bus2==1) {
                  
      		          printf("Usted ha selecionado 5 estrellas\n");
@@ -381,7 +388,7 @@ int main(){
 		
 		if (busqueda==4){
 			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
-	         scanf("%d",tipo);
+	         scanf("%d",&bus2);
 	               if(bus2==1) {
                  
      		          printf("Usted ha selecionado precio bajo\n");
@@ -393,7 +400,7 @@ int main(){
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
-						for(i=0; i<6; i++){
+						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &nprecio_bajo, rprecio_bajo);
 							printf("%d - %s\n", nprecio_bajo, rprecio_bajo);
 						}
