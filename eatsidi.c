@@ -218,10 +218,10 @@ int main(){
 						}	scanf("%d",&eleccion);
 						if(eleccion!=0){
 						
-							 printf ("1.Pizza 4 fomaggi\n2.Pizza diabola\n3.Fetuccini a la carbonara\n4.Lasaña piccola\n  ");
+							 printf ("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n ");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
 						 banner();
      	          }
      	            if(bus2==2) {
@@ -238,10 +238,10 @@ int main(){
 							printf("%d - %s\n", noriental, roriental);
     	               }scanf("%d",&eleccion);
 						if(eleccion!=0){		 	
-							 printf ("1.Tallarines Teriyaki\n2. Pato Cantones\n3.Arroz Tres Delicias\n4.Sopa Agripicante\n5.Sushi\n ");
+						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n ");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
 						 banner();
 					}
      	            if(bus2==3) {
@@ -259,10 +259,10 @@ int main(){
      		            }scanf("%d",&eleccion);
 					if(eleccion!=0){
 						
-							 printf ("1.Nachos con Guacamole\n2.Burritos\n3.Quesadilla\n4.Tacos variados\n");
+					 printf ("1.Nachos con Guacamole\n2.Burritos\n3.Quesadilla\n4.Tacos variados\n");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
 						 banner();
 					
     	            
@@ -282,10 +282,10 @@ int main(){
      		            } scanf("%d",&eleccion);
 						if(eleccion!=0){
 						
-							 printf ("1.Menu Cheeseburger\n2.Menu Alitas de pollo\n3.Menu Signature\n4.Menu Nuggets\n5.Menu Galaxy\n  ");
+						 printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
 						 banner();
      		        } 
 				  if(bus2==5){
@@ -315,13 +315,13 @@ int main(){
 	                       }	scanf("%d",&eleccion);
 						if(eleccion==1  || eleccion==2 || eleccion==6){
 						
-							 printf ("1.Menu Cheeseburger\n2.Menu Alitas de pollo\n3.Menu Signature\n4.Menu Nuggets\n5.Menu Galaxy\n  ");
+						 printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
 						}	else if (eleccion==3){
-							printf ("1.Pizza 4 fomaggi\n2.Pizza diabola\n3.Fetuccini a la carbonara\n4.Lasaña piccola\n  ");
+						 printf ("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
 						}else if (eleccion == 4){
-							 printf ("1.Nachos con Guacamole\n2.Burritos\n3.Quesadilla\n4.Tacos variados\n");
+						 printf ("1.Nachos con Guacamole\nv2.Burritos\nv3.Quesadilla\nv4.Tacos variados\n");
 						}else if(eleccion == 5){
-							 printf ("1.Tallarines Teriyaki\n2. Pato Cantones\n3.Arroz Tres Delicias\n4.Sopa Agripicante\n5.Sushi\n ");
+						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
 						}
 						 scanf("%d",&eleccion);
 						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
@@ -344,13 +344,13 @@ int main(){
 	                        }scanf("%d",&eleccion);
 						if(eleccion==1 ){
 						
-							 printf ("1.Menu Cheeseburger\n2.Menu Alitas de pollo\n3.Menu Signature\n4.Menu Nuggets\n5.Menu Galaxy\n  ");
+			             printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
 						}	else if (eleccion==3 || eleccion==5){
-							printf ("1.Pizza 4 fomaggi\n2.Pizza diabola\n3.Fetuccini a la carbonara\n4.Lasaña piccola\n  ");
+						 printf ("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
 						}else if (eleccion == 2){
-							 printf ("1.Nachos con Guacamole\n2.Burritos\n3.Quesadilla\n4.Tacos variados\n");
+						 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
 						}else if(eleccion == 4){
-							 printf ("1.Tallarines Teriyaki\n2. Pato Cantones\n3.Arroz Tres Delicias\n4.Sopa Agripicante\n5.Sushi\n ");
+						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
 						}
 						 scanf("%d",&eleccion);
 						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
@@ -369,7 +369,17 @@ int main(){
 		                      for(i=0; i<4; i++){
 		                      fscanf(fentrada, "%d %s", &n35km, r35km);
 		                      printf("%d - %s\n", n35km, r35km);
-                           }	
+                           } scanf("%d",&eleccion);
+                        if (eleccion==1){
+                         printf("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
+						} else if (eleccion==2){
+						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
+						} else if (eleccion==3 || eleccion==4){
+						 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
+						}
+						 scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
                      }
                      if(bus2==4) {
                        printf("Vuelva pronto");
@@ -393,6 +403,16 @@ int main(){
 							fscanf(fentrada, "%d %s", &n5estrellas, r5estrellas);
 							printf("%d - %s\n", n5estrellas, r5estrellas);
 						}
+						if (eleccion==1){
+						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
+						} else if (eleccion==2 || eleccion==3){
+						 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
+						} else if (eleccion==4){
+						 printf ("1.Menu durum doble XL\n 2.Menu kebab ternera\n 3.Menu kebab pollo\n 4.Menu durum normal con patatas\n");
+						}
+						 scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
                    }
      	             if(bus2==2) {
      	               printf("Usted ha selecionado 4 estrellas\n");
@@ -407,6 +427,18 @@ int main(){
 							fscanf(fentrada, "%d %s", &n4estrellas, r4estrellas);
 							printf("%d - %s\n", n4estrellas, r4estrellas);
     	               }
+    	               if (eleccion==1){
+    	                 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
+					   } else if (eleccion==2 || eleccion==3 || eleccion==4){
+					   	 printf("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
+					   } else if (eleccion==5 | eleccion==7){
+					   	 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
+					   } else if (eleccion==6){
+					   	 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
+					   }
+					     scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
     	           }
                      if(bus2==3) {
      		          printf("Usted ha seleccionado 3 estrellas\n");
@@ -421,6 +453,14 @@ int main(){
 							fscanf(fentrada, "%d %s", &n3estrellas, r3estrellas);
 							printf("%d - %s\n", n3estrellas, r3estrellas);
      		           }
+     		           if (eleccion==1){
+     		           	 printf("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
+						} else if (eleccion==2 || eleccion==3 || eleccion==4){
+						 printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
+						} 
+						 scanf("%d",&eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 banner();
      		       } 
 				     if(bus2==4){
      		     	printf("vuelva pronto");
