@@ -218,10 +218,10 @@ int main(){
 						}	scanf("%d",&eleccion);
 						if(eleccion!=0){
 						
-							 printf ("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n ");
+							 printf ("1.Pizza 4 fomaggi - 8.95\n 2.Pizza diabola - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20 min. Vuelva pronto\n",eleccion);
 						 banner();
      	          }
      	            if(bus2==2) {
@@ -238,10 +238,10 @@ int main(){
 							printf("%d - %s\n", noriental, roriental);
     	               }scanf("%d",&eleccion);
 						if(eleccion!=0){		 	
-						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n ");
+						 printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en inos 20 min. Vuelva pronto",eleccion);
 						 banner();
 					}
      	            if(bus2==3) {
@@ -259,10 +259,10 @@ int main(){
      		            }scanf("%d",&eleccion);
 					if(eleccion!=0){
 						
-					 printf ("1.Nachos con Guacamole\n2.Burritos\n3.Quesadilla\n4.Tacos variados\n");
+					 printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20 min. Vuelva pronto",eleccion);
 						 banner();
 					
     	            
@@ -282,10 +282,10 @@ int main(){
      		            } scanf("%d",&eleccion);
 						if(eleccion!=0){
 						
-						 printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
+						 printf ("1.Menu Cheeseburger - 5.00\n 2.Menu Alitas de pollo - 6.00\n 3.Menu Signature - 8.00\n 4.Menu Nuggets - 5.00\n 5.Menu Galaxy - 6.00\n");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20 min. Vuelva pronto",eleccion);
 						 banner();
      		        } 
 				  if(bus2==5){
@@ -315,16 +315,16 @@ int main(){
 	                       }	scanf("%d",&eleccion);
 						if(eleccion==1  || eleccion==2 || eleccion==6){
 						
-						 printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
+						 printf ("1.Menu Cheeseburger - 5.00\n 2.Menu Alitas de pollo - 6.00\n 3.Menu Signature - 8.00\n 4.Menu Nuggets - 5.00\n 5.Menu Galaxy - 6.00\n");
 						}	else if (eleccion==3){
-						 printf ("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
+						 printf ("1.Pizza 4 fomaggi - 8.95\n 2.Pizza diabola - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
 						}else if (eleccion == 4){
-						 printf ("1.Nachos con Guacamole\nv2.Burritos\nv3.Quesadilla\nv4.Tacos variados\n");
+						 printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
 						}else if(eleccion == 5){
-						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
+						 printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
 						}
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20 min. Vuelva pronto",eleccion);
 						 banner();
      		        }
                     			
@@ -344,16 +344,16 @@ int main(){
 	                        }scanf("%d",&eleccion);
 						if(eleccion==1 ){
 						
-			             printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
+			             printf ("1.Menu Cheeseburger - 5.00\n 2.Menu Alitas de pollo - 6.00\n 3.Menu Signature - 8.00\n 4.Menu Nuggets - 5.00\n 5.Menu Galaxy - 6.00\n");
 						}	else if (eleccion==3 || eleccion==5){
-						 printf ("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
+						 printf ("1.Pizza 4 fomaggi - 8.95\n 2.Pizza diabola - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
 						}else if (eleccion == 2){
-						 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
+						 printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
 						}else if(eleccion == 4){
-						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
+						 printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
 						}
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20 min. Vuelva pronto",eleccion);
 						 banner();
                      }
                      if (bus2==3) {
@@ -371,19 +371,20 @@ int main(){
 		                      printf("%d - %s\n", n35km, r35km);
                            } scanf("%d",&eleccion);
                         if (eleccion==1){
-                         printf("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
+                         printf("1.Pizza 4 fomaggi - 8.95\n 2.Pizza diabola - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
 						} else if (eleccion==2){
-						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
+						 printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
 						} else if (eleccion==3 || eleccion==4){
-						 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
+						 printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
 						}
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 30 min. Vuelva pronto",eleccion);
 						 banner();
                      }
                      if(bus2==4) {
                        printf("Vuelva pronto");
                      }
+                 }
 	
 		if (busqueda==3){
 			printf("Introduzca numero de estrellas:\n 1 para 5 estrellas\n 2 para 4 estrellas\n 3 para 3 estrellas\n 0. 4 para salir del programa\n");
@@ -402,16 +403,16 @@ int main(){
 						for(i=0; i<4; i++){
 							fscanf(fentrada, "%d %s", &n5estrellas, r5estrellas);
 							printf("%d - %s\n", n5estrellas, r5estrellas);
-						}
+						}scanf("%d",&eleccion);
 						if (eleccion==1){
-						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
+						 printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
 						} else if (eleccion==2 || eleccion==3){
-						 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
+						 printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
 						} else if (eleccion==4){
-						 printf ("1.Menu durum doble XL\n 2.Menu kebab ternera\n 3.Menu kebab pollo\n 4.Menu durum normal con patatas\n");
+						 printf ("1.Menu Durum Doble XL - 6.50\n 2.Menu Kebab Ternera - 4.50\n 3.Menu Kebab Pollo - 4.50\n 4.Menu Durum Normal con Patatas - 5.50\n");
 						}
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20 min. Vuelva pronto",eleccion);
 						 banner();
                    }
      	             if(bus2==2) {
@@ -426,18 +427,16 @@ int main(){
 						for(i=0; i<7; i++){
 							fscanf(fentrada, "%d %s", &n4estrellas, r4estrellas);
 							printf("%d - %s\n", n4estrellas, r4estrellas);
-    	               }
-    	               if (eleccion==1){
-    	                 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
+    	               }scanf("%d",&eleccion);
+    	               if (eleccion==1 || eleccion==6){
+    	                 printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
 					   } else if (eleccion==2 || eleccion==3 || eleccion==4){
-					   	 printf("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
+					   	 printf("1.Pizza 4 fomaggi - 8.95\n 2.Pizza diabola - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
 					   } else if (eleccion==5 | eleccion==7){
-					   	 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
-					   } else if (eleccion==6){
-					   	 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
-					   }
+					   	 printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
+					   } 
 					     scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en 20 unos min. Vuelva pronto",eleccion);
 						 banner();
     	           }
                      if(bus2==3) {
@@ -452,14 +451,14 @@ int main(){
 						for(i=0; i<4; i++){
 							fscanf(fentrada, "%d %s", &n3estrellas, r3estrellas);
 							printf("%d - %s\n", n3estrellas, r3estrellas);
-     		           }
+     		           }scanf("%d",&eleccion);
      		           if (eleccion==1){
-     		           	 printf("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n");
+     		           	 printf("1.Pizza 4 fomaggi - 8.95\n 2.Pizza diabola - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
 						} else if (eleccion==2 || eleccion==3 || eleccion==4){
-						 printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
+						 printf ("1.Menu Cheeseburger - 5.00\n 2.Menu Alitas de pollo - 6.00\n 3.Menu Signature - 8.00\n 4.Menu Nuggets - 5.00\n 5.Menu Galaxy - 6.00\n");
 						} 
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20min. Vuelva pronto",eleccion);
 						 banner();
      		       } 
 				     if(bus2==4){
@@ -470,8 +469,7 @@ int main(){
 		
 		if (busqueda==4){
 			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
-
-	         scanf("%d",bus2);
+            scanf("%d",bus2);
 
 
 
@@ -486,11 +484,24 @@ int main(){
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
-						for(i=0; i<3; i++){
+						for(i=0; i<7; i++){
 							fscanf(fentrada, "%d %s", &nprecio_bajo, rprecio_bajo);
 							printf("%d - %s\n", nprecio_bajo, rprecio_bajo);
+						}scanf("%d",&eleccion);
+						if (eleccion==1 || eleccion==4 || eleccion==5 || eleccion==6){
+						 printf ("1.Menu Cheeseburger - 5.00\n 2.Menu Alitas de pollo - 6.00\n 3.Menu Signature - 8.00\n 4.Menu Nuggets - 5.00\n 5.Menu Galaxy - 6.00\n");	
 						}
+						else if(eleccion==2){
+							 printf("1.Raviolli al Pesto - 8.95\n 2.Provolone al Forno - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
+						}
+						else if(eleccion==3){
+							printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
+						}
+						scanf("%d",&eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20min. Vuelva pronto",eleccion);
+						 banner();
                      }
+                     
      	           if(bus2==2) {
      	               printf("Usted ha selecionado gama media\n");
      	              FILE * fentrada;
@@ -503,7 +514,19 @@ int main(){
 						for(i=0; i<5; i++){
 							fscanf(fentrada, "%d %s", &ngama_media, rgama_media);
 							printf("%d - %s\n", ngama_media, rgama_media);
-    	               }
+    	               }scanf("%d",&eleccion);
+    	               if (eleccion==1){
+    	               	printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
+					   }
+					   else if(eleccion==2 || eleccion==3){
+					   	printf("1.Pizza 4 fomaggi - 8.95\n 2.Pizza diabola - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
+					   }
+					   else if(eleccion==4){
+					   	printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
+					   }
+					   scanf("%d",&eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20min. Vuelva pronto",eleccion);
+						 banner();
     	            }
 
      	           if(bus2==3) {
@@ -515,10 +538,22 @@ int main(){
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
-						for(i=0; i<5; i++){
+						for(i=0; i<6; i++){
 							fscanf(fentrada, "%d %s", &nprecio_alto, rprecio_alto);
 							printf("%d - %s\n", nprecio_alto, rprecio_alto);
-     		            }
+     		            }scanf("%d",&eleccion);
+     		            if (eleccion==1 || eleccion==2){
+     		            	printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
+						 }
+						 else if (eleccion==3 || eleccion==4){
+						 	printf ("1.Nachos con Guacamole XXL - 7.50\n2.Burrito Carnitas - 6.50\n3.Quesadilla - 5.50\n4.Tacos variados (3 ud.) - 6.00\n");
+						 }
+						 else if (eleccion==5){
+						 	printf("1.Pizza 4 fomaggi - 8.95\n 2.Pizza diabola - 8.95\n 3.Fetuccini a la carbonara - 7.95\n 4.Lasaña piccola - 6.95\n ");
+						 }
+						  scanf("%d",&eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20min. Vuelva pronto",eleccion);
+						 banner();
      		        } 
 		}
 	   if (busqueda==5){
@@ -530,5 +565,5 @@ int main(){
 
 return 0;
 }
-}
+
 
