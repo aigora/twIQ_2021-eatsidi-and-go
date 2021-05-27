@@ -221,7 +221,7 @@ int main(){
 							 printf ("1.Pizza 4 fomaggi\n 2.Pizza diabola\n 3.Fetuccini a la carbonara\n 4.Lasaña piccola\n ");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
      	          }
      	            if(bus2==2) {
@@ -241,7 +241,7 @@ int main(){
 						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n ");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
 					}
      	            if(bus2==3) {
@@ -262,7 +262,7 @@ int main(){
 					 printf ("1.Nachos con Guacamole\n2.Burritos\n3.Quesadilla\n4.Tacos variados\n");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
 					
     	            
@@ -285,7 +285,7 @@ int main(){
 						 printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
 						}	
 						 scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
      		        } 
 				  if(bus2==5){
@@ -324,7 +324,7 @@ int main(){
 						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
 						}
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
      		        }
                     			
@@ -353,7 +353,7 @@ int main(){
 						 printf ("1.Tallarines Teriyaki\n 2.Pato Cantones\n 3.Arroz Tres Delicias\n 4.Sopa Agripicante\n 5.Sushi\n");
 						}
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
                      }
                      if (bus2==3) {
@@ -378,7 +378,7 @@ int main(){
 						 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
 						}
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
                      }
                      if(bus2==4) {
@@ -437,7 +437,7 @@ int main(){
 					   	 printf ("1.Nachos con Guacamole\n 2.Burritos\n 3.Quesadilla\n 4.Tacos variados\n");
 					   }
 					     scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
     	           }
                      if(bus2==3) {
@@ -459,7 +459,7 @@ int main(){
 						 printf ("1.Menu Cheeseburger\n 2.Menu Alitas de pollo\n 3.Menu Signature\n 4.Menu Nuggets\n 5.Menu Galaxy\n");
 						} 
 						 scanf("%d",&eleccion);
-						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto",eleccion);
+						 printf("su pedido del plato numero %d sido realizado con exito. Llegara en 20 min .Vuelva pronto\n",eleccion);
 						 banner();
      		       } 
 				     if(bus2==4){
