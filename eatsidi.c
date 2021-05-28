@@ -11,13 +11,20 @@ struct Persona
     char mail[50];
     char contra[20];
 };
+//declaracion de funciones
 void banner();
+void menu();
+void datos();
+void registro();
+
+
+
 int main(){
 	banner();
-	    int arroba = 0, punto = 0;
-	    	int tipo;
-            char letra;
-            int busqueda,bus2;
+	         int arroba = 0, punto = 0;
+	    	 int tipo;
+             char letra;
+             int busqueda,bus2;
              int nitaliano;
 			 char ritaliano[200];
 			 int noriental;
@@ -44,124 +51,29 @@ int main(){
 			 int ngamamedia;
 			 char rgamamedia[200];
 			 int nprecioalto;
-			 char rprecioalto[200];
-			 
-			 
-     int fentrada;
-     struct Persona persona;
+			 char rprecioalto[200];	 
+             int fentrada;
+             int bus3;
+             struct Persona persona;	
+             int opcion1, i, opcion, a = 0;
 
-    int opcion1, i, opcion, a = 0;
-
-        printf("Bienvenido a EATSIDI AND GO, donde comer es nuestro deber\n");
-        printf("A PEDIR!\n");
-        printf("Seleccione la opcion para ingresar:\n");
-        printf("1.Registrarse\n");
-        printf("2.Iniciar Sesion\n3.Salir del programa\n");
+       menu();
 
         scanf("%d", &opcion1);
 
-        if (opcion1 == 1)
-
-        {
-
-            printf("Datos de la persona\n");
-            printf("Introduzca el nombre\n");
-
-            fflush(stdin);
-
-            gets(persona.nombre);
-
-            printf("Introduzca apellido\n");
-
-            gets(persona.apellido);
-
-            printf("Introduzca su direccion\n");
-
-            gets(persona.direccion);
-
-            printf("Introduzca su tlf\n");
-            
-             fflush(stdin);
-            scanf("%d", &persona.tlf);
+    if (opcion1 == 1) {
+         datos();
                 
-           do
-            {
-               printf("Introduzca su mail\n");
-               fflush(stdin);
-                scanf("%s", persona.mail);
-
-                for (i = 0; i < 15; i++)
-                {
-                    if (persona.mail[i] == '@')
-                    {
-                        arroba = 1;
-                    }
-                    if (persona.mail[i] == '.')
-                    {
-                        punto = 1;
-                    }
-                }
-                if (arroba == 1 && punto == 1)
-                {
-                    printf("Correo valido\n");
-                }
-                else
-                {
-                    printf("Correo invalido\n");
-                }
-
-          } while (arroba != 1 && punto != 1);
-
-            printf("Introduzca la contrasena\n");
-
-            scanf("%s", persona.contra);
+        registro();
  
 	}if (opcion1==2) {
-//            do
-//           {
 
-                printf("Introduzca su mail\n");
-
-                scanf("%s", persona.mail);
-
-                for (i = 0; i < 15; i++)
-
-                {
-
-                    if (persona.mail[i] == '@')
-                    {
-
-                        arroba = 1;
-                    }
-
-                    if (persona.mail[i] == '.')
-                    {
-
-                        punto = 1;
-                    }
-                }
+          registro();
           
-			
-                if (arroba == 1 && punto == 1)
-                {
-
-                    printf("Correo valido\n");
-                }
-                else
-                {
-
-                    printf("Correo invalido\n");
-                }
-
-//            } while ('arroba' !=1 && 'punto' !=1);{
-
-            printf("Introduzca su contrasena\n");
-
-            scanf("%s", persona.contra);
-        
     } if (opcion1==3){
 	
     printf("Vuelva pronto\n");
+    banner();
     }
 
     
@@ -203,11 +115,10 @@ int main(){
 						 scanf("%d",&eleccion);
 						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en unos 20 min. Vuelva pronto\n",eleccion);
 						 banner();
-     	          }
-     	            if(bus2==2) {
-     	               printf("Usted ha selecionado comida oriental\n");
-     	                FILE * fentrada;
-						fentrada = fopen("oriental.txt", "r");
+     	               } if(bus2==2) {
+     	                  printf("Usted ha selecionado comida oriental\n");
+     	                  FILE * fentrada;
+						  fentrada = fopen("oriental.txt", "r");
 						if(fentrada == NULL){
 							printf("Error en la apertura del fichero\n");
 							return 0;
@@ -416,7 +327,7 @@ int main(){
 					   	 printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
 					   } 
 					     scanf("%d",&eleccion);
-						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en 20 unos min. Vuelva pronto",eleccion);
+						 printf("Su pedido del plato numero %d ha sido realizado con exito. Llegara en 20 unos min. Vuelva pronto\n",eleccion);
 						 banner();
     	           }
                      if(bus2==3) {
@@ -445,15 +356,13 @@ int main(){
      		     	printf("vuelva pronto");
 				     }
 	  }
-		
-		
+
 		if (busqueda==4){
 			printf("Introduzca el tipo de precio:\n 1.Precio bajo\n 2.Gama media\n 3.Precio alto\n");
-            scanf("%d",bus2);
+		
+            scanf("%d",&bus3);
 
-
-
-	               if(bus2==1) {
+	               if(bus3==1) {
                  
      		          printf("Usted ha selecionado precio bajo\n");
      		          
@@ -464,7 +373,7 @@ int main(){
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
-						for(i=0; i<7; i++){
+						for(i=0; i<6; i++){
 							fscanf(fentrada, "%d %s", &npreciobajo, rpreciobajo);
 							printf("%d - %s\n", npreciobajo, rpreciobajo);
 						}scanf("%d",&eleccion);
@@ -482,7 +391,7 @@ int main(){
 						 banner();
                      }
                      
-     	           if(bus2==2) {
+     	           if(bus3==2) {
      	               printf("Usted ha selecionado gama media\n");
      	              FILE * fentrada;
 						fentrada = fopen("gamamedia.txt", "r");
@@ -491,7 +400,7 @@ int main(){
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
-						for(i=0; i<5; i++){
+						for(i=0; i<3; i++){
 							fscanf(fentrada, "%d %s", &ngamamedia, rgamamedia);
 							printf("%d - %s\n", ngamamedia, rgamamedia);
     	               }scanf("%d",&eleccion);
@@ -509,7 +418,7 @@ int main(){
 						 banner();
     	            }
 
-     	           if(bus2==3) {
+     	           if(bus3==3) {
      		          printf("Usted ha seleccionado precio alto\n");
      		          FILE * fentrada;
 						fentrada = fopen("precioalto.txt", "r");
@@ -518,7 +427,7 @@ int main(){
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
-						for(i=0; i<6; i++){
+						for(i=0; i<5; i++){
 							fscanf(fentrada, "%d %s", &nprecioalto, rprecioalto);
 							printf("%d - %s\n", nprecioalto, rprecioalto);
      		            }scanf("%d",&eleccion);
@@ -540,9 +449,6 @@ int main(){
 			printf("Vuelva pronto");
 		}
 	         
-    
-
-
 return 0;
 }
 
@@ -559,4 +465,73 @@ printf( "MM          ,MMMMMMMMb   MM           MM MM MM     MM MM         ,MMMMM
 printf( "MM      /   d'      YM.  MM     L    ,M9 MM MM    .M9 MM         d'      YM. M      \MM  MM    .M9        8b    d9  8b    d8 \n"  );    
 printf( "MMMMMMMMM _dM_     _dMM__MM_    MYMMMM9 _MM_MMMMMMM9'_MM_      _dM_     _dMM_M_      \M _MMMMMMM9'         YMMMM9    YMMMM9 \n"  );
 printf(".\n.\n");
+}
+void menu(){
+	    printf("Bienvenido a EATSIDI AND GO, donde comer es nuestro deber\n");
+        printf("A PEDIR!\n");
+        printf("Seleccione la opcion para ingresar:\n");
+        printf("1.Registrarse\n");
+        printf("2.Iniciar Sesion\n3.Salir del programa\n");
+}
+
+void registro(){
+	struct Persona persona;
+	int i;
+int	arroba;
+int punto;
+do{
+
+	printf("Introduzca su mail\n");
+               fflush(stdin);
+                scanf("%s", persona.mail);
+
+                for (i = 0; i < 15; i++)
+                {
+                    if (persona.mail[i] == '@')
+                    {
+                        arroba = 1;
+                    }
+                    if (persona.mail[i] == '.')
+                    {
+                        punto = 1;
+                    }
+                }
+                if (arroba == 1 && punto == 1)
+                {
+                    printf("Correo valido\n");
+                }
+                else
+                {
+                    printf("Correo invalido\n");
+                }
+
+          } while (arroba != 1 && punto != 1);
+
+            printf("Introduzca la contrasena\n");
+
+            scanf("%s", persona.contra);
+}
+
+void datos(){
+	struct Persona persona;
+	int i;
+	 printf("Datos de la persona\n");
+            printf("Introduzca el nombre\n");
+
+            fflush(stdin);
+
+            gets(persona.nombre);
+
+            printf("Introduzca apellido\n");
+
+            gets(persona.apellido);
+
+            printf("Introduzca su direccion\n");
+
+            gets(persona.direccion);
+
+            printf("Introduzca su tlf\n");
+            
+             fflush(stdin);
+            scanf("%d", &persona.tlf);
 }
