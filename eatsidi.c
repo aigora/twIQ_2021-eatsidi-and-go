@@ -77,29 +77,29 @@ int main(){
 
         {
 
-            printf("datos de la persona\n");
+            printf("Datos de la persona\n");
             printf("introduzca el nombre\n");
 
             fflush(stdin);
 
             gets(persona.nombre);
 
-            printf("introduzca apellido\n");
+            printf("Introduzca apellido\n");
 
             gets(persona.apellido);
 
-            printf("introduzca su direccion\n");
+            printf("Introduzca su direccion\n");
 
             gets(persona.direccion);
 
-            printf("introduzca su tlf\n");
+            printf("Introduzca su tlf\n");
 
             scanf("%d", &persona.tlf);
 
 //            do
 //            {
 
-                printf("introduzca su mail\n");
+                printf("Introduzca su mail\n");
                 scanf("%s", persona.mail);
 
                 for (i = 0; i < 15; i++)
@@ -132,7 +132,7 @@ int main(){
 
 //           } while ('arroba' != 1 && 'punto' != 1);
 
-            printf("introduzca la contrasena\n");
+            printf("Introduzca la contrasena\n");
 
             scanf("%s", persona.contra);
  
@@ -140,7 +140,7 @@ int main(){
 //            do
 //           {
 
-                printf("introduzca su mail\n");
+                printf("Introduzca su mail\n");
 
                 scanf("%s", persona.mail);
 
@@ -175,7 +175,7 @@ int main(){
 
 //            } while ('arroba' !=1 && 'punto' !=1);{
 
-            printf("introduzca su contrasena\n");
+            printf("Introduzca su contrasena\n");
 
             scanf("%s", persona.contra);
         
@@ -187,7 +187,7 @@ int main(){
     
     if (opcion1 ==1 || opcion1==2){
     	
-     printf("bienvenido\n ¿Como desea encontrar su restaurante?\n Introduzca:\n 1. Para buscar por tipo de comida\n 2. Por distancia\n 3. Valoracion\n 4. Precio\n 5. Salir del programa\n");
+     printf("Bienvenido\n ¿Como desea encontrar su restaurante?\n Introduzca:\n 1. Para buscar por tipo de comida\n 2. Por distancia\n 3. Valoracion\n 4. Precio\n 5. Salir del programa\n");
 	         
 			scanf("%d",&busqueda);
 
