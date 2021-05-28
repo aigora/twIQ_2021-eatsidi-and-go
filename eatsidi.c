@@ -11,20 +11,7 @@ struct Persona
     char mail[50];
     char contra[20];
 };
-void banner(){
-printf(  "__________        _   __________   ____  ___________  ____             _     ___      ___________            ____      ____ \n"  );
-printf("`MMMMMMMMM       dM.  MMMMMMMMMM  6MMMMb\`MM`MMMMMMMb.`MM'            dM.    `MM\     `M'`MMMMMMMb.         6MMMMb/   6MMMMb\n"  );
-printf( " MM      \      ,MMb  /   MM    \ 6M'    ` MM MM    `Mb MM            ,MMb     MMM\     M  MM    `Mb        8P    YM  8P    Y8\n"  );
-printf( "MM             d'YM.     MM     MM       MM MM     MM MM            d'YM.    M\MM\     M  MM     MM       6M      Y 6M      Mb\n"  );
-printf( "MM    ,       ,P `Mb     MM     YM.      MM MM     MM MM           ,P `Mb    M \MM\    M  MM     MM       MM        MM      MM\n"  );
-printf( "MMMMMMM       d'  YM.    MM      YMMMMb  MM MM     MM MM           d'  YM.   M  \MM\   M  MM     MM       MM        MM      MM\n"  );
-printf( "MM    `      ,P   `Mb    MM          `Mb MM MM     MM MM          ,P   `Mb   M   \MM\  M  MM     MM       MM     ___MM      MM\n"  );
-printf( "MM           d'    YM.   MM           MM MM MM     MM MM          d'    YM.  M    \MM\ M  MM     MM       MM     `M'MM      MM \n"  );
-printf( "MM          ,MMMMMMMMb   MM           MM MM MM     MM MM         ,MMMMMMMMb  M     \MMM  MM     MM       YM      M YM      M9\n"  );                                                                                                                             
-printf( "MM      /   d'      YM.  MM     L    ,M9 MM MM    .M9 MM         d'      YM. M      \MM  MM    .M9        8b    d9  8b    d8 \n"  );    
-printf( "MMMMMMMMM _dM_     _dMM__MM_    MYMMMM9 _MM_MMMMMMM9'_MM_      _dM_     _dMM_M_      \M _MMMMMMM9'         YMMMM9    YMMMM9 \n"  );
-printf(".\n.\n");
-}
+void banner();
 int main(){
 	banner();
 	    int arroba = 0, punto = 0;
@@ -93,44 +80,37 @@ int main(){
             gets(persona.direccion);
 
             printf("Introduzca su tlf\n");
-
+            
+             fflush(stdin);
             scanf("%d", &persona.tlf);
-
-//            do
-//            {
-
-                printf("Introduzca su mail\n");
+                
+           do
+            {
+               printf("Introduzca su mail\n");
+               fflush(stdin);
                 scanf("%s", persona.mail);
 
                 for (i = 0; i < 15; i++)
-
                 {
-
                     if (persona.mail[i] == '@')
                     {
-
                         arroba = 1;
                     }
-
                     if (persona.mail[i] == '.')
                     {
-
                         punto = 1;
                     }
                 }
-
                 if (arroba == 1 && punto == 1)
                 {
-
                     printf("Correo valido\n");
                 }
                 else
                 {
-
                     printf("Correo invalido\n");
                 }
 
-//           } while ('arroba' != 1 && 'punto' != 1);
+          } while (arroba != 1 && punto != 1);
 
             printf("Introduzca la contrasena\n");
 
@@ -566,4 +546,17 @@ int main(){
 return 0;
 }
 
-
+void banner(){
+printf(  "__________        _   __________   ____  ___________  ____             _     ___      ___________            ____      ____ \n"  );
+printf("`MMMMMMMMM       dM.  MMMMMMMMMM  6MMMMb\`MM`MMMMMMMb.`MM'            dM.    `MM\     `M'`MMMMMMMb.         6MMMMb/   6MMMMb\n"  );
+printf( " MM      \      ,MMb  /   MM    \ 6M'    ` MM MM    `Mb MM            ,MMb     MMM\     M  MM    `Mb        8P    YM  8P    Y8\n"  );
+printf( "MM             d'YM.     MM     MM       MM MM     MM MM            d'YM.    M\MM\     M  MM     MM       6M      Y 6M      Mb\n"  );
+printf( "MM    ,       ,P `Mb     MM     YM.      MM MM     MM MM           ,P `Mb    M \MM\    M  MM     MM       MM        MM      MM\n"  );
+printf( "MMMMMMM       d'  YM.    MM      YMMMMb  MM MM     MM MM           d'  YM.   M  \MM\   M  MM     MM       MM        MM      MM\n"  );
+printf( "MM    `      ,P   `Mb    MM          `Mb MM MM     MM MM          ,P   `Mb   M   \MM\  M  MM     MM       MM     ___MM      MM\n"  );
+printf( "MM           d'    YM.   MM           MM MM MM     MM MM          d'    YM.  M    \MM\ M  MM     MM       MM     `M'MM      MM \n"  );
+printf( "MM          ,MMMMMMMMb   MM           MM MM MM     MM MM         ,MMMMMMMMb  M     \MMM  MM     MM       YM      M YM      M9\n"  );                                                                                                                             
+printf( "MM      /   d'      YM.  MM     L    ,M9 MM MM    .M9 MM         d'      YM. M      \MM  MM    .M9        8b    d9  8b    d8 \n"  );    
+printf( "MMMMMMMMM _dM_     _dMM__MM_    MYMMMM9 _MM_MMMMMMM9'_MM_      _dM_     _dMM_M_      \M _MMMMMMM9'         YMMMM9    YMMMM9 \n"  );
+printf(".\n.\n");
+}
