@@ -78,7 +78,7 @@ int main(){
         {
 
             printf("Datos de la persona\n");
-            printf("introduzca el nombre\n");
+            printf("Introduzca el nombre\n");
 
             fflush(stdin);
 
