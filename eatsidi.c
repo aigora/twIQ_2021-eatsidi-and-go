@@ -52,12 +52,12 @@ int main(){
 			 char r4estrellas[200];
 			 int n5estrellas;
 			 char r5estrellas[200];
-			 int nprecio_bajo;
-			 char rprecio_bajo[200];
-			 int ngama_media;
-			 char rgama_media[200];
-			 int nprecio_alto;
-			 char rprecio_alto[200];
+			 int npreciobajo;
+			 char rpreciobajo[200];
+			 int ngamamedia;
+			 char rgamamedia[200];
+			 int nprecioalto;
+			 char rprecioalto[200];
 			 
 			 
      int fentrada;
@@ -478,15 +478,15 @@ int main(){
      		          printf("Usted ha selecionado precio bajo\n");
      		          
      		          FILE * fentrada;
-						fentrada = fopen("precio_bajo.txt", "r");
+						fentrada = fopen("preciobajo.txt", "r");
 						if(fentrada == NULL){
 							printf("Error en la apertura del fichero\n");
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
 						for(i=0; i<7; i++){
-							fscanf(fentrada, "%d %s", &nprecio_bajo, rprecio_bajo);
-							printf("%d - %s\n", nprecio_bajo, rprecio_bajo);
+							fscanf(fentrada, "%d %s", &npreciobajo, rpreciobajo);
+							printf("%d - %s\n", npreciobajo, rpreciobajo);
 						}scanf("%d",&eleccion);
 						if (eleccion==1 || eleccion==4 || eleccion==5 || eleccion==6){
 						 printf ("1.Menu Cheeseburger - 5.00\n 2.Menu Alitas de pollo - 6.00\n 3.Menu Signature - 8.00\n 4.Menu Nuggets - 5.00\n 5.Menu Galaxy - 6.00\n");	
@@ -505,15 +505,15 @@ int main(){
      	           if(bus2==2) {
      	               printf("Usted ha selecionado gama media\n");
      	              FILE * fentrada;
-						fentrada = fopen("gama_media.txt", "r");
+						fentrada = fopen("gamamedia.txt", "r");
 						if(fentrada == NULL){
 							printf("Error en la apertura del fichero\n");
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
 						for(i=0; i<5; i++){
-							fscanf(fentrada, "%d %s", &ngama_media, rgama_media);
-							printf("%d - %s\n", ngama_media, rgama_media);
+							fscanf(fentrada, "%d %s", &ngamamedia, rgamamedia);
+							printf("%d - %s\n", ngamamedia, rgamamedia);
     	               }scanf("%d",&eleccion);
     	               if (eleccion==1){
     	               	printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
@@ -532,15 +532,15 @@ int main(){
      	           if(bus2==3) {
      		          printf("Usted ha seleccionado precio alto\n");
      		          FILE * fentrada;
-						fentrada = fopen("precio_alto.txt", "r");
+						fentrada = fopen("precioalto.txt", "r");
 						if(fentrada == NULL){
 							printf("Error en la apertura del fichero\n");
 							return 0;
 						}
 						printf("¿Que restaurante prefiere? \n");
 						for(i=0; i<6; i++){
-							fscanf(fentrada, "%d %s", &nprecio_alto, rprecio_alto);
-							printf("%d - %s\n", nprecio_alto, rprecio_alto);
+							fscanf(fentrada, "%d %s", &nprecioalto, rprecioalto);
+							printf("%d - %s\n", nprecioalto, rprecioalto);
      		            }scanf("%d",&eleccion);
      		            if (eleccion==1 || eleccion==2){
      		            	printf ("1.Tallarines Teriyaki - 5.95\n 2.Pato Cantones - 8.95\n 3.Arroz Tres Delicias - 4.95\n 4.Sopa Agripicante - 4.95\n 5.Sushi variado 10.95\n ");
